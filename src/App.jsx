@@ -17,6 +17,7 @@ import "./App.css";
 import Register from "./pages/Register.jsx";
 import Dashboard from "./pages/Dashboard.jsx";
 import DashboardHome from "./pages/Dashboard/Home.jsx";
+import Reports from "./pages/Dashboard/Reports.jsx";
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -28,6 +29,7 @@ const router = createBrowserRouter(
 
                 <Route path="dashboard" element={<Dashboard />}>
                     <Route index element={<DashboardHome />}></Route>
+                    <Route path="reports" element={<Reports />}></Route>
                 </Route>
 
                 <Route path="*" element={<NotFound />}></Route>
